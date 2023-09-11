@@ -1,0 +1,279 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main{
+    width: 100%;
+    background: url(pic/bg.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+    font-family: sans-serif;
+}
+
+.navbar{
+    width: 86%;
+    display: flex;
+    margin: auto;
+    padding: 15px 0;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar .logo {
+    width: 160px;
+    cursor: pointer;
+    margin-top: -3%;
+    margin-left: -2%;
+    transform: perspective(800px) rotateX(10deg) rotateY(10deg) scale(1.2);
+    transition: transform 2.4s ease;
+}
+
+.navbar .logo:hover {
+    transform: perspective(800px) rotateX(0) rotateY(360deg) scale(1);
+}
+nav{
+    margin-top: -4%;
+}
+ul{
+    list-style: none;
+    display: inline-flex;
+    padding: 10px 0;
+    margin-top: -3%;
+}
+
+ul li{
+    margin: 0 20px; 
+    position: relative;
+}
+
+ul li a{
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    color: darkslategray;
+    position: relative;
+    transition: .4s ease;
+
+}
+ul li a::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: rgb(230, 104, 59);
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform 0.3s ease;
+}
+
+ul li a:hover::before {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+.info{
+    margin-left: 7%;
+    margin-top: 6%;
+}
+
+.info h1{
+    font-size: 65px;
+    color: rgb(36,32,30);
+    
+}
+
+.info h3{
+    font-size: 18px;
+    letter-spacing: 1px;
+    line-height: 24px;
+}
+
+.info span{
+    color: rgb(230,104,59);
+}
+
+.info a{
+    text-decoration:  none;
+    color: #fff;
+    background: rgb(36,32,30);
+    margin: 26px 0;
+    padding: 10px 18px;
+    border-radius: 10px;
+    display: inline-block;  
+}
+
+.info a:hover{
+    background: rgb(59,174,209);
+}
+
+/*.image{
+    width: 30%;
+    height: 60%;
+    position: absolute;
+    right: 100px;
+    bottom: 0;
+    
+}*/
+
+.image img{
+    position: absolute;
+    height: 50%;
+    width: 20%;
+    left: 70%;
+    bottom: 20%;
+    transform: perspective(1000px) rotateX(10deg) rotateY(10deg) scale(1.2);
+    transition: transform 2.4s ease;
+
+
+}
+
+.image:hover .umer{
+    transform: perspective(800px) rotateX(0) rotateY(360deg) scale(1);
+}
+
+.icons a{
+    text-decoration: none;
+    color: #000;
+}
+
+.icons ion-icon{
+    margin-left: 7%;
+    color: #000;
+    margin-right: -60px;
+    font-size: 40px;
+       
+}
+
+.icons ion-icon:hover{
+    color: rgb(59,174,209);
+}
+/* Existing CSS styles above */
+#about {
+    padding: 40px;
+    background-color: #fff;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    position: relative;
+}
+
+#about h2 {
+    position: relative;
+}
+
+#about h2::before {
+    content: "";
+    display: block;
+    width: 50px;
+    height: 2px;
+    background-color: #333;
+    position: absolute;
+    top: -15px;
+    left: 0;
+}
+
+.portfolio-item {
+    margin-bottom: 30px;
+}
+
+.portfolio-item img {
+    max-width: 100%;
+    border: 1px solid #ddd;
+    transition: transform 0.3s;
+}
+
+.portfolio-item img:hover {
+    transform: scale(1.1);
+}
+.styled-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.styled-table th,
+.styled-table td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: left;
+}
+
+.styled-table th {
+    background-color: #333;
+    color: #fff;
+}
+
+.styled-table tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+
+.styled-table tbody tr:hover {
+    background-color: #ddd;
+}
+.styled-table.achievements {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.styled-table.achievements th,
+.styled-table.achievements td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: left;
+}
+
+.styled-table.achievements th {
+    background-color: #333;
+    color: #fff;
+}
+
+.styled-table.achievements tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.styled-table.achievements tbody tr:hover {
+    background-color: #ddd;
+}
+
+#language-skills {
+    background-color: #fff;
+    padding: 40px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    position: relative;
+}
+
+#language-skills h2 {
+    position: relative;
+}
+
+#language-skills h2::before {
+    content: "";
+    display: block;
+    width: 50px;
+    height: 2px;
+    background-color: #333;
+    position: absolute;
+    top: -15px;
+    left: 0;
+}
+
+#language-skills ul {
+    list-style: none;
+    padding-left: 0;
+    margin-top: 20px;
+}
+
+#language-skills li {
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+
